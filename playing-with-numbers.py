@@ -23,6 +23,8 @@ def solve1(arr, sum_query, sum_arr):
         median = l
     elif arr[r] >= 0:
         median = r
+    else:
+        median = n + 1
     l = 1
     r = n
     while l + 1 < r:
@@ -70,6 +72,8 @@ def solve2(arr, sum_query, sum_arr):
         median = l
     elif arr[r] >= 0:
         median = r
+    else:
+        median = n + 1
     l = 1
     r = n
     while l + 1 < r:
